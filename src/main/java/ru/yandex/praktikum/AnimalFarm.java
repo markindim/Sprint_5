@@ -1,8 +1,6 @@
 package ru.yandex.praktikum;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class AnimalFarm {
     private ArrayList<String> farmAnimals;
@@ -41,7 +39,7 @@ public class AnimalFarm {
                 name = farmAnimal.split(" ")[1];
                 uniqueNames.add(name);
             } catch (Exception exception) {
-                System.out.println("Please correct string: %s. Incorrect input data. %n", farmAnimal);
+                System.out.printf("Please correct string: %s. Incorrect input data. %n", farmAnimal);
             }
         }
         return uniqueNames;
@@ -52,7 +50,7 @@ public class AnimalFarm {
 //    по переданному виду животного. В этом случае имя животного равно N;
 //    по переданному имени животного. В этом случае вид животного равен NOT_DEFINED.
     public void addFarmAnimals(Animal animal, String name) {
-        farmAnimals.add(animal.name() = " " + name);
+        farmAnimals.add(animal.name() + " " + name);
     }
 
     public void addFarmAnimals(Animal animal) {
@@ -66,7 +64,7 @@ public class AnimalFarm {
 //    В классе AnimalFarm переопредели метод toString так, чтобы он выводил информацию по животным на ферме в виде:
 //    Вид_животного Имя_животного
     @Override
-    public void toString() {
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         for (String farmAnimal : farmAnimals) {
             String printFarmAnimal = farmAnimal.replace(" ", ": ");
