@@ -13,6 +13,7 @@ public class Main {
         farmAnimals.add("cAt: Рыжик");
         farmAnimals.add("sheep: Долли");
         farmAnimals.add("cow: ");
+        farmAnimals.add("Жучка");
 
         AnimalFarm animalFarm = new AnimalFarm(farmAnimals);
 
