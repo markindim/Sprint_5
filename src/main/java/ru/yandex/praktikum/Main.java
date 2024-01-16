@@ -6,7 +6,6 @@ import java.util.HashSet;
 public class Main {
     public static void main(String[] args) {
         ArrayList<String> farmAnimals = new ArrayList<>();
-        farmAnimals.clear();
         farmAnimals.add("DoG Бобик");
         farmAnimals.add("сat Васька");
         farmAnimals.add("COW Буренка");
