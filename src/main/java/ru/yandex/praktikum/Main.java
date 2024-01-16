@@ -6,6 +6,7 @@ import java.util.HashSet;
 public class Main {
     public static void main(String[] args) {
         ArrayList<String> farmAnimals = new ArrayList<>();
+        farmAnimals.clear();
         farmAnimals.add("DoG Бобик");
         farmAnimals.add("сat Васька");
         farmAnimals.add("COW Буренка");
@@ -21,5 +22,10 @@ public class Main {
 
         HashSet<String> uniqueNames = animalFarm.uniqueNames();
         System.out.println("Имена животных на ферме: " + uniqueNames);
+
+        System.out.println("Список животных на ферме:");
+        for (int i = 0; i < farmAnimals.size(); i++) {
+            System.out.printf("%d. %s%n", i + 1, farmAnimals.get(i));
+        }
     }
 }
