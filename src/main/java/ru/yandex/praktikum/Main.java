@@ -24,7 +24,7 @@ public class Main {
 
         System.out.println("Список животных на ферме:");
         for (int i = 0; i < farmAnimals.size(); i++) {
-            System.out.printf("%d. %s%n", i + 1, farmAnimals.get(i));
+            System.out.printf("%d. %s%n", i + 1, farmAnimals.get(i) + ";");
         }
     }
 }
